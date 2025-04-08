@@ -1,14 +1,17 @@
+
 import React from "react";
 
 const NewsCard = ({ image, title, description, time, category }) => {
     return (
         <div className="w-full  p-2">
             <div className="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                {/* Image */}
-                <img src={image} alt={title} className="w-full object-cover" style={{ height: '300px' }} />
+                {/*Clickable Image*/}
+
 
                 {/* Content */}
                 <div className="p-4">
+                    {/* Clickable Title */}
+                    {/* <Link to={`/post/${id}`}></Link> */}
                     <h2 className="text-lg font-bold text-gray-900 hover:underline cursor-pointer">
                         {title}
                     </h2>
